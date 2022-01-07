@@ -8,11 +8,11 @@ const Hero = (props) => (
   <Section row nopadding>
     <LeftSection>
       <SectionTitle main center>
-        Welcome to <br />
-        Yuanqin's Portfolio
+        Hi, I'm Yuanqin!
       </SectionTitle>
       <SectionText>
-        The developer who wish to create something that can enrich my audience lives by connecting them through a lively, collaborative and imaginative virtual world.
+        A software Engineer with the passion for web and game. <br />
+        Current master's degree student at <br /> Carnegie Mellon University
       </SectionText>
       <Button onClick={() => window.location = "https://google.com"}> Learn More </Button>
     </LeftSection>

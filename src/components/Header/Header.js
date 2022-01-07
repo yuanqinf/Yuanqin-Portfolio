@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
+import { FaItchIo } from 'react-icons/fa';
+import { AiOutlineAntDesign } from 'react-icons/ai';
+
+
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 
@@ -10,7 +13,7 @@ const Header = () => (
     <Div1>
       <Link href="/">
         <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: "20px" }}>
-          <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+          <AiOutlineAntDesign size="2.5rem" /> <Span>&nbsp;Yuanqin</Span>
         </a>
       </Link>
     </Div1>
@@ -27,19 +30,19 @@ const Header = () => (
       </li>
       <li>
         <Link href={"#about"}>
-          <NavLink>About</NavLink>
+          <NavLink>About Me</NavLink>
         </Link>
       </li>
     </Div2>
     <Div3>
       <SocialIcons href='https://github.com'>
-        <AiFillGithub size="3rem" />
+        <AiFillGithub title="Github" size="3rem" />
       </SocialIcons>
       <SocialIcons href='https://linkedin.com'>
-        <AiFillLinkedin size="3rem" />
+        <AiFillLinkedin title="Linkedin" size="3rem" />
       </SocialIcons>
-      <SocialIcons href='https://instagram.com'>
-        <AiFillInstagram size="3rem" />
+      <SocialIcons href='https://aaronfan.itch.io/'>
+        <FaItchIo title="itch.io" size="2.6rem" />
       </SocialIcons>
     </Div3>
   </Container>
