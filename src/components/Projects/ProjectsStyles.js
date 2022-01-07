@@ -31,13 +31,12 @@ export const BlogCard = styled.div`
     width: 100%;
   }
 `;
+
 export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
   width: 100%;
-
 `;
-
 
 export const HeaderThree = styled.h3`
   font-weight: 500;
@@ -89,10 +88,10 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-color:#d4c0c0;
+color:#ffffff;
 font-size: 1.6rem;
 padding:1rem 1.5rem;
-background: #6b3030;
+background: #F63C3F;
 border-radius: 15px;
 transition: 0.5s;
 &:hover{
