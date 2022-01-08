@@ -1,8 +1,7 @@
 import React from 'react';
-
 import { Section, SectionText, SectionTitle, SectionTextHighlight } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import { LeftSection, AnimatedIcon, LinkIcon } from './HeroStyles';
 import { AiOutlineSend } from 'react-icons/ai';
 
 const Hero = (props) => (
@@ -12,7 +11,7 @@ const Hero = (props) => (
         Hi, I'm Yuanqin! &nbsp;
       </SectionTitle>
       <SectionText>
-        A Software Engineer that specializes in
+        A Software Engineer who specializes in
         <br />
         <SectionTextHighlight>web-development and game-programming</SectionTextHighlight>
       </SectionText>
@@ -20,6 +19,7 @@ const Hero = (props) => (
         Contact Me &nbsp;
         <AiOutlineSend size="2rem" />
       </Button>
+      <LinkIcon href={"#projects"} > <AnimatedIcon /></LinkIcon>
     </LeftSection>
   </Section>
 );

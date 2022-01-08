@@ -66,6 +66,25 @@ export const NavLink = styled.a`
   }
 `;
 
+// Name Links
+export const NameLink = styled.a`
+  font-size: 2rem;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.90);
+  transition: 0.4s ease;
+  marginBottom: "10px";
+  alignItems: "center";
+  display: "flex";
+  &:hover {
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 0.5rem;
+  }
+`;
+
 /// DropDown Contact
 export const ContactDropDown = styled.button`
   border: none;
@@ -124,6 +143,5 @@ border-radius: 50px;
     background-color: #3c82f6;
     transform: scale(1.2);
     cursor: pointer;
-    
   }
 `

@@ -3,17 +3,15 @@ import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { FaItchIo } from 'react-icons/fa';
 import { AiOutlineAntDesign } from 'react-icons/ai';
-
-
-
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 
 const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: "20px" }}>
-          <AiOutlineAntDesign size="2.5rem" /> <Span>&nbsp;Yuanqin</Span>
+        <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: "10px" }}
+        >
+          <AiOutlineAntDesign size="2.5rem" /> <Span>&nbsp;Yuanqin.Fan</Span>
         </a>
       </Link>
     </Div1>
