@@ -171,7 +171,7 @@ const breatheAnimation = keyframes`
 }
 `;
 
-export const UpButton = styled.div`
+export const UpButton = styled.a`
    animation-name: ${breatheAnimation};
    animation-duration: 3s;
    animation-iteration-count: infinite;

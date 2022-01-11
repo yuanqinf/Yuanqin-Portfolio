@@ -11,13 +11,13 @@ const Hero = (props) => (
         Hi, I'm Yuanqin! &nbsp;
       </SectionTitle>
       <SectionText>
-        A Software Engineer who specializes in
+        A Software Engineer specializes in
         <br />
         <SectionTextHighlight>web-development and game-programming</SectionTextHighlight>
-        Graduate Student @ &nbsp;
+        Graduate Student (class of 2022) @ &nbsp;
         <SectionTextHighlight main >Carnegie Mellon University</SectionTextHighlight>
       </SectionText>
-      <Button onClick={() => window.location = "https://google.com"}>
+      <Button onClick={() => window.location = "mailto:fanyuanqin96@gmail.com"}>
         Contact Me &nbsp;
         <AiOutlineSend size="2rem" />
       </Button>

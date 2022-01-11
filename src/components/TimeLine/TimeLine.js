@@ -52,9 +52,6 @@ const Timeline = () => {
         more about me &nbsp;
         <FiMoreHorizontal size="1rem" />
       </MoreItem>
-      {/* <SectionText>
-        Always has the willingness to learn and adapt to new programming languages, frameworks, and game engines.
-      </SectionText> */}
       <br />
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

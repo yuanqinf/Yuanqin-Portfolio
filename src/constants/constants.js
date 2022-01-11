@@ -38,9 +38,9 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2015, text: 'Studued at UC Irvine as an undergraduate student majored in CS', },
-  { year: 2018, text: 'Participated my first Game Jam and became a software developer', },
+  { year: 2015, text: 'Studied at UC Irvine as an undergraduate student majored in CS', },
+  { year: 2018, text: 'Participated my first Game Jam and finished the game in 48 hours', },
   { year: 2019, text: 'Joined Datamimo as a Software Engineer intern (Machine Learning)' },
   { year: 2020, text: 'Admitted into Carnegie Mellon University as a graduate student', },
-  { year: 2022, text: 'Joined CarGurus as a Software Engineer intern (Front-End)', },
+  { year: 2022, text: 'Joined CarGurus as a Software Engineer co-op (Front-End)', },
 ];

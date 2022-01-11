@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiFillLinkedin, AiOutlineDownload } from 'react-icons/ai';
 import { FaItchIo } from 'react-icons/fa';
+import { HiDownload } from 'react-icons/hi';
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span, MainIcon } from './HeaderStyles';
 
 const resumeLink = "https://drive.google.com/file/d/1uXwPcPLlJoP8voyvCsgKLUGQ5dGPZXa1/view?usp=sharing";
@@ -35,7 +36,7 @@ const Header = () => (
         <a href={resumeLink} target="_blank">
           <NavLink>
             Resume
-            <AiOutlineDownload size="1.2rem" />
+            <HiDownload size="1.2rem" />
           </NavLink>
         </a>
       </li>

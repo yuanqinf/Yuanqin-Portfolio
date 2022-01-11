@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import { FaItchIo, FaArrowCircleUp } from 'react-icons/fa';
-import { MdArrowUpward } from 'react-icons/md';
+import { FaItchIo } from 'react-icons/fa';
 import { IoChevronUpOutline } from 'react-icons/io5';
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer, UpButton } from './FooterStyles';
@@ -17,15 +16,6 @@ const Footer = () => {
     else if (scrolled <= 300) {
       setVisible(false)
     }
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-      /* you can also use 'auto' behaviour
-         in place of 'smooth' */
-    });
   };
 
   useEffect(() => {
@@ -61,8 +51,8 @@ const Footer = () => {
             <FaItchIo title="itch.io" size="2.6rem" />
           </SocialIcons>
         </SocialContainer>
-        <UpButton>
-          <IoChevronUpOutline onClick={scrollToTop}
+        <UpButton href={"#"}>
+          <IoChevronUpOutline
             style={{ display: visible ? 'inline' : 'none' }} />
         </UpButton>
       </SocialIconsContainer>
