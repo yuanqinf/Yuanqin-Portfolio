@@ -1,4 +1,5 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
+import { AiOutlineAntDesign } from 'react-icons/ai';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -131,6 +132,16 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
   }
 `;
 
+export const MainIcon = styled(AiOutlineAntDesign)`
+  display: "flex";
+  alignItems: "center";
+  color: "white";
+  marginBottom: "10px";
+  transition: 1.5s ease;
+  &:hover {
+    transform: rotate(180deg);
+  }
+`;
 
 // Social Icons 
 

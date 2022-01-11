@@ -82,7 +82,11 @@ export const SectionTextHighlight = styled.p`
   line-height: 40px;
   font-weight: 550;
   padding-bottom: 3.6rem;
-  color: rgba(0, 45, 200, 0.9);
+
+  color: ${(props) => props.main ?
+    'rgba(170, 0, 25, 0.9);' :
+    'rgba(0, 45, 200, 0.9);'
+  };
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
@@ -300,4 +304,34 @@ export const LinkIconImg = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     height: ${({ large }) => large ? '32px' : '16px'};
   }
+`
+
+export const MoreItem = styled.a`
+	font-size: 18px;
+	line-height: 30px;
+	color: rgba(255, 255, 255, 0.75);
+	margin-bottom: 16px;
+	margin-left: 16px;
+	transition: .3s ease;
+	position: relative;
+	left: 0;
+
+	&:hover {
+		color: #fff;
+		left: 6px;
+	}
+
+	@media ${props => props.theme.breakpoints.md} {
+		font-size: 16px;
+		line-height: 28px;
+		display: flex;
+	}
+
+	@media ${props => props.theme.breakpoints.sm} {
+		font-size: 12px;
+		line-height: 14px;
+		margin-bottom: 8px;
+		display: flex;
+		align-items: center;
+	}
 `

@@ -1,16 +1,14 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiUnitySmall, DiZend } from 'react-icons/di';
+import { DiDatabase, DiReact, DiUnitySmall } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 const Technologies = () => (
   <Section id="tech">
-    <SectionDivider />
-    <br />
-    <SectionTitle>Technologies</SectionTitle>
+    <SectionTitle>Areas of Expertise &nbsp;</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world
-      From Back-end To Design
+      I've worked with many technologies in the software engineering field<br />
+      From front-end, back-end to gameplay programming.
     </SectionText>
     <List>
       <ListItem>
@@ -19,17 +17,17 @@ const Technologies = () => (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            React.js
+            React and JavaScript
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiFirebase size="3rem" />
+        <DiDatabase size="3rem" />
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node.js and Database
+            Django and Python
           </ListParagraph>
         </ListContainer>
       </ListItem>

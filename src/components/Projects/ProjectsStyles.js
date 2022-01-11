@@ -4,7 +4,7 @@ export const Img = styled.img`
   width:100%;
   height:100%;
   object-fit: cover;
-  overflow: hidden;
+  overflow: hidden;  
 `
 
 export const GridContainer = styled.section`
@@ -27,6 +27,7 @@ export const BlogCard = styled.div`
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
+  opacity: 1;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -34,6 +35,7 @@ export const BlogCard = styled.div`
 
 export const TitleContent = styled.div`
   text-align: center;
+  font-weight: 500;
   z-index: 20;
   width: 100%;
 `;
@@ -41,9 +43,9 @@ export const TitleContent = styled.div`
 export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
-  color: #9cc9e3;
+  color: #FFFFFF;
   padding: .5rem 0;
-  font-size: ${(props) => props.title ? '3rem' : '2rem'};
+  font-size: ${(props) => props.title ? '2.8rem' : '1.8rem'};
 `;
 
 export const Hr = styled.hr`
@@ -74,7 +76,6 @@ export const CardInfo = styled.p`
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding:.3rem
-  
 }
 `;
 
@@ -91,11 +92,11 @@ export const ExternalLinks = styled.a`
 color:#ffffff;
 font-size: 1.6rem;
 padding:1rem 1.5rem;
-background: #F63C3F;
+background: #3b3b3b;
 border-radius: 15px;
 transition: 0.5s;
 &:hover{
-  background: #801414;
+  background: #1c1c1c;
 
 }
 `;
@@ -106,6 +107,19 @@ justify-content: space-around;
 padding: 2rem;
 `
 export const Tag = styled.li`
-color: #d8bfbf;
+color: #1f2a41;
 font-size: 1.5rem;
+font-weight: 500;
 `
+
+// export const CardInfo = styled.p`
+//   width: 100%;
+//   padding: 0 50px;
+//   color: #e4e6e7;
+//   font-style: 2rem;
+//   line-height: 24px;
+//   text-align: justify;
+//   @media ${(props) => props.theme.breakpoints.sm} {
+//     padding:.3rem
+// }
+// `;

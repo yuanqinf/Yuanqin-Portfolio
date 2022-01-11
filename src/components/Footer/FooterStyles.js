@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 
 export const FooterWrapper = styled.section`
 	width: calc(100vw - 96px);
@@ -156,4 +156,32 @@ export const LinkTitle = styled.h4`
 		line-height: 12px;
 		margin-bottom: 8px;
 	}
+`
+const breatheAnimation = keyframes`
+ {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+`;
+
+export const UpButton = styled.div`
+   animation-name: ${breatheAnimation};
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   position: flex
+   width: 100%;
+   bottom: 40px;
+   height: 20px;
+   margin-left: 30px;
+   font-size: 3rem;
+   z-index: 1;
+   cursor: pointer;
+   color: white;
 `

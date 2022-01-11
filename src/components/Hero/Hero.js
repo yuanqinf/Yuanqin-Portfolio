@@ -14,6 +14,8 @@ const Hero = (props) => (
         A Software Engineer who specializes in
         <br />
         <SectionTextHighlight>web-development and game-programming</SectionTextHighlight>
+        Graduate Student @ &nbsp;
+        <SectionTextHighlight main >Carnegie Mellon University</SectionTextHighlight>
       </SectionText>
       <Button onClick={() => window.location = "https://google.com"}>
         Contact Me &nbsp;

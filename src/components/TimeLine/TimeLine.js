@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionDivider, SectionText, SectionTitle, MoreItem } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
+import { FiMoreHorizontal } from 'react-icons/fi';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -45,10 +46,16 @@ const Timeline = () => {
 
   return (
     <Section id="about">
-      <SectionTitle>About Me</SectionTitle>
-      <SectionText>
+      <SectionDivider />
+      <SectionTitle>My Roadmap</SectionTitle>
+      <MoreItem href="https://google.com">
+        more about me &nbsp;
+        <FiMoreHorizontal size="1rem" />
+      </MoreItem>
+      {/* <SectionText>
         Always has the willingness to learn and adapt to new programming languages, frameworks, and game engines.
-      </SectionText>
+      </SectionText> */}
+      <br />
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
@@ -111,7 +118,6 @@ const Timeline = () => {
           </CarouselButton>
         ))}
       </CarouselButtons>
-      <SectionDivider />
     </Section>
   );
 };

@@ -1,35 +1,43 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiOutlineDownload } from 'react-icons/ai';
 import { FaItchIo } from 'react-icons/fa';
-import { AiOutlineAntDesign } from 'react-icons/ai';
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
+import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span, MainIcon } from './HeaderStyles';
+
+const resumeLink = "https://drive.google.com/file/d/1uXwPcPLlJoP8voyvCsgKLUGQ5dGPZXa1/view?usp=sharing";
 
 const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: "10px" }}
-        >
-          <AiOutlineAntDesign size="2.5rem" /> <Span>&nbsp;Yuanqin.Fan</Span>
+        <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: "10px" }}>
+          <MainIcon size="2.5rem" /> <Span>&nbsp;Yuanqin.Fan</Span>
         </a>
       </Link>
     </Div1>
     <Div2>
       <li>
-        <Link href={"#projects"}>
-          <NavLink>Projects</NavLink>
-        </Link>
+        <a href={resumeLink} target="_blank">
+          <NavLink>Work</NavLink>
+        </a>
       </li>
-      <li>
+      {/* <li>
         <Link href={"#tech"}>
           <NavLink>Technologies</NavLink>
         </Link>
+      </li> */}
+      <li>
+        <a href={resumeLink} target="_blank">
+          <NavLink>About</NavLink>
+        </a>
       </li>
       <li>
-        <Link href={"#about"}>
-          <NavLink>About</NavLink>
-        </Link>
+        <a href={resumeLink} target="_blank">
+          <NavLink>
+            Resume
+            <AiOutlineDownload size="1.2rem" />
+          </NavLink>
+        </a>
       </li>
     </Div2>
     <Div3>

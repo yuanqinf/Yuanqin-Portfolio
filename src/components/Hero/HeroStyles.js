@@ -1,8 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { ChevronDown } from '@styled-icons/bootstrap/ChevronDown'
 
-
-
 export const LeftSection = styled.div`
   width: 100%;
   @media ${(props) => props.theme.breakpoints.sm} {
