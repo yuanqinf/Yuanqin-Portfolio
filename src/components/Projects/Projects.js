@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle, MoreItem } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
@@ -8,14 +9,16 @@ const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
     <SectionTitle >Selected Projects</SectionTitle>
-    <MoreItem href="https://google.com">
-      more projects &nbsp;
-      <FiMoreHorizontal size="1rem" />
-    </MoreItem>
+    <Link href={'/work'}>
+      <MoreItem>
+        more projects &nbsp;
+        <FiMoreHorizontal size="1rem" />
+      </MoreItem>
+    </Link>
     <GridContainer>
       {projects.map(({ id, image, title, description, tags, source, visit }) => (
         <BlogCard key={id}>
-          <Img src={image} />
+          <a href={visit}><Img src={image} /></a>
           <TitleContent>
             <HeaderThree title> {title} </HeaderThree>
             <Hr />

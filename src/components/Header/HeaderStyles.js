@@ -55,10 +55,11 @@ export const Div3 = styled.div`
 export const NavLink = styled.a`
   font-size: 2rem;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.80);
-  transition: 0.4s ease;
+  transition: 0.2s ease;
+  color: ${(props) => props.main ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.75)'};
+  font-weight: ${(props) => props.main ? '500' : '400'};
   &:hover {
-    color: #fff;
+    color: #ffffff;
     opacity: 1;
     cursor: pointer;
   }

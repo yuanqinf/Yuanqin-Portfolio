@@ -317,6 +317,7 @@ export const MoreItem = styled.a`
 	left: 0;
 
 	&:hover {
+    cursor: pointer;
 		color: #fff;
 		left: 6px;
 	}

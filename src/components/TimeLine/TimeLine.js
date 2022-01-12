@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-
+import Link from 'next/link';
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
-import { Section, SectionDivider, SectionText, SectionTitle, MoreItem } from '../../styles/GlobalComponents';
+import { Section, SectionDivider, SectionTitle, MoreItem } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
 import { FiMoreHorizontal } from 'react-icons/fi';
 
@@ -45,13 +45,15 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section id="about">
+    <Section id="timeline">
       <SectionDivider />
       <SectionTitle>My Roadmap</SectionTitle>
-      <MoreItem href="https://google.com">
-        more about me &nbsp;
-        <FiMoreHorizontal size="1rem" />
-      </MoreItem>
+      <Link href={'/about'}>
+        <MoreItem>
+          more about me &nbsp;
+          <FiMoreHorizontal size="1rem" />
+        </MoreItem>
+      </Link>
       <br />
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

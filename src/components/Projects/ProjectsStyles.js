@@ -5,6 +5,10 @@ export const Img = styled.img`
   height:100%;
   object-fit: cover;
   overflow: hidden;  
+  transition: transform 0.5s;
+  &:hover{
+    transform: scale(1.08);
+  }
 `
 
 export const GridContainer = styled.section`
@@ -26,6 +30,7 @@ export const BlogCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
+  overflow: hidden;  
   width: 400px;
   opacity: 1;
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -97,7 +102,6 @@ border-radius: 15px;
 transition: 0.5s;
 &:hover{
   background: #1c1c1c;
-
 }
 `;
 

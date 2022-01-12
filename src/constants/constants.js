@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     title: 'Paper Crane',
-    description: "Paper Crane is an AR game with facial detection feature which is aimming to letting our players feel freedom as well as enjoy the gameplay experience we designed for them.",
+    description: "Paper Crane is an AR game with facial detection feature which is aiming to letting our players feel freedom as well as enjoy the gameplay experience we designed for them.",
     image: '/images/PaperCrane.png',
     tags: ['Unity3D', 'OpenCV',],
     source: 'https://google.com',
@@ -39,7 +39,7 @@ export const projects = [
 
 export const TimeLineData = [
   { year: 2015, text: 'Studied at UC Irvine as an undergraduate student majored in CS', },
-  { year: 2018, text: 'Participated my first Game Jam and finished the game in 48 hours', },
+  { year: 2018, text: 'Participated my first Game Jam and finished a game in 48 hours', },
   { year: 2019, text: 'Joined Datamimo as a Software Engineer intern (Machine Learning)' },
   { year: 2020, text: 'Admitted into Carnegie Mellon University as a graduate student', },
   { year: 2022, text: 'Joined CarGurus as a Software Engineer co-op (Front-End)', },
