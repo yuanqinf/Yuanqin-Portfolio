@@ -7,25 +7,27 @@ export const Img = styled.img`
   overflow: hidden;  
   transition: transform 0.5s;
   &:hover{
-    transform: scale(1.08);
+    cursor: pointer;
+    transform: scale(1.05);
+    filter: drop-shadow(0.5px 0.5px 0.5px white);
   }
 `
 
 export const GridContainer = styled.section`
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-padding: 3rem;
-place-items: center;
-column-gap: 2rem;
-row-gap: 3rem;
-@media ${(props) => props.theme.breakpoints.sm} {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  padding-bottom: 0;
-}
-
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  padding: 3rem;
+  place-items: center;
+  column-gap: 2rem;
+  row-gap: 3rem;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-bottom: 0;
+  }
 `
+
 export const BlogCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
@@ -102,6 +104,7 @@ border-radius: 15px;
 transition: 0.5s;
 &:hover{
   background: #1c1c1c;
+  cursor: pointer;
 }
 `;
 
@@ -115,15 +118,3 @@ color: #1f2a41;
 font-size: 1.5rem;
 font-weight: 500;
 `
-
-// export const CardInfo = styled.p`
-//   width: 100%;
-//   padding: 0 50px;
-//   color: #e4e6e7;
-//   font-style: 2rem;
-//   line-height: 24px;
-//   text-align: justify;
-//   @media ${(props) => props.theme.breakpoints.sm} {
-//     padding:.3rem
-// }
-// `;

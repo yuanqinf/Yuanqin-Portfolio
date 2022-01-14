@@ -59,7 +59,7 @@ export const SectionText = styled.p`
   font-size: 24px;
   line-height: px;
   font-weight: 400;
-  padding-bottom: 3.6rem;
+  padding-bottom: 2rem;
   color: rgba(255, 255, 255, 0.9);
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -103,7 +103,6 @@ export const SectionTextHighlight = styled.p`
 `
 
 export const SectionDivider = styled.div`
-
   width: 64px;
   height: 6px;
   border-radius: 10px;

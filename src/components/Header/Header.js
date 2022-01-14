@@ -2,16 +2,27 @@ import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { FaItchIo } from 'react-icons/fa';
-import { HiDownload } from 'react-icons/hi';
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span, MainIcon } from './HeaderStyles';
+import { HiOutlineLink } from 'react-icons/hi';
+import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span, MainIcon, DownloadIcon } from './HeaderStyles';
 
 const resumeLink = "https://drive.google.com/file/d/1uXwPcPLlJoP8voyvCsgKLUGQ5dGPZXa1/view?usp=sharing";
 
 function Header() {
   const [currentActivatedTab, setCurrentActivatedTab] = useState("");
+  const [width, setWidth] = useState(0);
+  const isMobile = (width <= 768);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
 
   useEffect(() => {
+    handleWindowSizeChange();
     setCurrentActivatedTab(window.location.pathname)
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+        window.removeEventListener('resize', handleWindowSizeChange);
+    }
   }, [])
 
   return (
@@ -46,8 +57,8 @@ function Header() {
         <li>
           <a href={resumeLink} target="_blank">
             <NavLink>
-              Resume
-              <HiDownload size="1.2rem" />
+              Resume&nbsp;
+              <HiOutlineLink size={isMobile ? "0rem" :"1.2rem"} />
             </NavLink>
           </a>
         </li>
