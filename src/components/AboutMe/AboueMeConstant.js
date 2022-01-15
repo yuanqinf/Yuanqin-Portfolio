@@ -1,11 +1,17 @@
 export const IntroText = 
-    "Hi there! I’m Yuanqin — a software engineer who is passionate about coding and designing the interactive experience."
+    "Hi there! I’m Yuanqin — a software engineer who is passionate about designing and creating the interactive experience."
 
 export const DetailText1 = 
-    "I’m currently a graduate student from Carnegie Mellon University (CMU) who majored in Entertainment Technology, with bachelor's Degree in Computer Science(Game Track) from University Of California, Irvine (UCI). Since my childhood, playing video games has been a big passion of mine. So I am really enjoying doing anything about games. As a player, I like to play both current popular games and old classic games. Sometimes, I would also like to do some reviews for some games which can express my opinion for these games."
+    "I am a master degree student from Carnegie Mellon University studying Entertainment Technology. Before that, I received my bachelor's degree from University of California, Irvine majored in Computer Science."
 
 export const DetailText2 = 
-    "My skill set covers a variety of areas related to UX design such as user research, data analysis, and interaction design. I like to extract creative solutions to enhance users’ experience through design thinking."
+    "I love building software applications for my users to immerse them in interactive experiences such as web apps and video games. With the barrier between the real and virtual world fading away, I'm always picturing creating more lively and engaging applications to enhance the daily life of people that we meet every day visually and practically."
+
+export const DetailText3 = 
+    "With the systematic course study in school and extensive project experience of working with talented fellows, my skill set covers various areas related to software development, such as front-end, back-end, and game programming."
+
+export const DetailText4 =
+    "My interest lies in video editing, gaming reviewing, and learning more exciting and advanced technologies outside of work!";
 
 export const Accomplishment1 = "Playing through Microaggressions on a College Campus with “Blindspot”, IEEE, 2021";
 

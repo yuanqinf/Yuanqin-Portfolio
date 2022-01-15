@@ -103,6 +103,7 @@ border-radius: 15px;
 transition: 0.5s;
 &:hover{
   background: #1c1c1c;
+  cursor: pointer;
 }
 `;
 

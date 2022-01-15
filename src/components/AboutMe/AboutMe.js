@@ -1,6 +1,6 @@
 import React from 'react';
 import { AboutDivider, Section, AboutText, Img, LogoImg, RefLink } from './AboutMeStyles';
-import { IntroText, DetailText1, DetailText2, Accomplishment1, Accomplishment2 } from './AboueMeConstant';
+import { IntroText, DetailText1, DetailText2, DetailText3, DetailText4, Accomplishment1, Accomplishment2 } from './AboueMeConstant';
 
 const AboutMe = () => (
   <Section>
@@ -10,11 +10,15 @@ const AboutMe = () => (
       <br />
     </AboutText>
     <Section nopadding row>
-      <Img src={'/images/Yuanqin_Png.png'} />
+      <Img src={'/images/Person/Yuanqin_Png.png'} />
       <AboutText desc>
         {DetailText1}
         <br /> <br />
         {DetailText2}
+        <br /> <br />
+        {DetailText3}
+        <br /> <br />
+        {DetailText4}
       </AboutText>
     </Section>
     <br />
@@ -27,14 +31,14 @@ const AboutMe = () => (
         <br />
         Carnegie Mellon University
       </AboutText>
-      <LogoImg src = "/images/CMU_logo.png"/>
+      <LogoImg src = "/images/SchoolLogos/CMU_logo.png"/>
       <br />
       <AboutText>
         Bachelor of Science: Computer Science	@
         <br />
         University of California, Irvine  
       </AboutText>
-      <LogoImg src = "/images/UCI_logo.png"/>
+      <LogoImg src = "/images/SchoolLogos/UCI_logo.png"/>
     </Section>
     <br />
     <AboutDivider />

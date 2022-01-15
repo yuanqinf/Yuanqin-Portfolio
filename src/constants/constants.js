@@ -1,119 +1,96 @@
+// Project Information
+export const PopTask =
+{
+  title: 'Pop-Task',
+  description: "Pop-task is a task management tool that improves the efficiency and motivations of users to work as a group no matter in school, in the company or even at home.",
+  image: '/images/ProjectImage/PopTask.png',
+  tags: ['React.js', 'TailwindCSS', 'Django', 'AWS'],
+  visit: '/work/PopTask',
+  id: 0,
+};
+
+export const Todoist =
+{
+  title: 'Todoist',
+  description: "Todo-ist is a cloned project which implemented the main feature and UI of the real ‘Todoist’  by using ReactJS and FireBase.  ",
+  image: '/images/ProjectImage/Todoist.png',
+  tags: ['React.js', 'SCSS', 'Firebase'],
+  visit: '/work/Todoist',
+  id: 1,
+};
+
+export const Tetris = 
+{
+  title: 'Tetris',
+  description: "Pop-task is a work assignment and management resource that improves your efficiency and motivations to work no matter in school, in company or even at home.",
+  image: '/images/ProjectImage/Tetris.png',
+  tags: ['React.js', 'CSS'],
+  visit: '/work/Tetris',
+  id: 2,
+};
+
+export const WanderMath =
+{
+  title: 'WanderMath',
+  description: "WanderMath is an Augmented Reality (AR) experience to help 4th and 5th graders engage in open-ended math adventures.",
+  image: '/images/ProjectImage/WanderMath.png',
+  tags: ['Unity3D', 'ARCore', 'IOS'],
+  visit: '/work/WanderMath',
+  id: 3,
+};
+
+export const PaperCrane =
+{
+  title: 'Paper Crane',
+  description: "Paper Crane is an AR game with facial detection feature which is aiming to letting our players feel freedom as well as enjoy the gameplay experience we designed for them.",
+  image: '/images/ProjectImage/PaperCrane.png',
+  tags: ['Unity3D', 'OpenCV',],
+  visit: '/work/PaperCrane',
+  id: 4,
+};
+
+export const Blindspot =
+{
+  title: 'Blindspot',
+  description: "Paper Crane is an AR game with facial detection feature which is aiming to letting our players feel freedom as well as enjoy the gameplay experience we designed for them.",
+  image: '/images/ProjectImage/BlindSpot.png',
+  tags: ['Unity3D', 'WebGl',],
+  visit: '/work/Blindspot',
+  id: 5,
+};
+
+export const Shopifight =
+{
+  title: 'Shopi-fight',
+  description: "Paper Crane is an AR game with facial detection feature which is aiming to letting our players feel freedom as well as enjoy the gameplay experience we designed for them.",
+  image: '/images/ProjectImage/Shopifight.jpg',
+  tags: ['Unity3D', 'Photon Engine',],
+  visit: '/work/Shopifight',
+  id: 6,
+};
+
+export const HitNRun =
+{
+  title: 'Hit.n.Run',
+  description: "Paper Crane is an AR game with facial detection feature which is aiming to letting our players feel freedom as well as enjoy the gameplay experience we designed for them.",
+  image: '/images/ProjectImage/HitNRun.png',
+  tags: ['Unity3D'],
+  visit: '/work/HitNRun',
+  id: 7,
+};
+
+
 export const projects = [
-  {
-    title: 'WanderMath',
-    description: "WanderMath is an Augmented Reality (AR) experience to help 4th and 5th graders engage in open-ended math adventures.",
-    image: '/images/WanderMath.png',
-    tags: ['Unity3D', 'ARCore', 'IOS'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 0,
-  },
-  {
-    title: 'Pop-Task',
-    description: "Pop-task is a work assignment and management resource that improves your efficiency and motivations to work no matter in school, in company or even at home.",
-    image: '/images/PopTask.png',
-    tags: ['React.js', 'TailwindCSS', 'Django', 'AWS'],
-    source: 'https://google.com',
-    visit: '/work/PopTask',
-    id: 1,
-  },
-  {
-    title: 'Paper Crane',
-    description: "Paper Crane is an AR game with facial detection feature which is aiming to letting our players feel freedom as well as enjoy the gameplay experience we designed for them.",
-    image: '/images/PaperCrane.png',
-    tags: ['Unity3D', 'OpenCV',],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 2,
-  },
-  {
-    title: 'Todo-ist',
-    description: "Todo-ist is a cloned project which implemented the main feature and UI of the real ‘Todoist’  by using ReactJS and FireBase.  ",
-    image: '/images/Todoiest.png',
-    tags: ['React.js', 'SCSS', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 3,
-  },
+  WanderMath, PopTask, PaperCrane, Todoist,
 ];
 
 export const webProjects = [
-  {
-    title: 'Pop-Task',
-    description: "Pop-task is a work assignment and management resource that improves your efficiency and motivations to work no matter in school, in company or even at home.",
-    image: '/images/PopTask.png',
-    tags: ['React.js', 'TailwindCSS', 'Django', 'AWS'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 0,
-  },
-  {
-    title: 'Todo-ist',
-    description: "Pop-task is a work assignment and management resource that improves your efficiency and motivations to work no matter in school, in company or even at home.",
-    image: '/images/Todoiest.png',
-    tags: ['React.js', 'SCSS', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 1,
-  },
-  {
-    title: 'Tetris',
-    description: "Pop-task is a work assignment and management resource that improves your efficiency and motivations to work no matter in school, in company or even at home.",
-    image: '/images/Tetris.png',
-    tags: ['React.js', 'CSS'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 2,
-  },
-]
+  PopTask, Todoist, Tetris,
+];
 
 export const gameProjects = [
-  {
-    title: 'WanderMath',
-    description: "WanderMath is an Augmented Reality (AR) experience to help 4th and 5th graders engage in open-ended math adventures.",
-    image: '/images/WanderMath.png',
-    tags: ['Unity3D', 'ARCore', 'IOS'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 0,
-  },
-  {
-    title: 'Paper Crane',
-    description: "Paper Crane is an AR game with facial detection feature which is aiming to letting our players feel freedom as well as enjoy the gameplay experience we designed for them.",
-    image: '/images/PaperCrane.png',
-    tags: ['Unity3D', 'OpenCV',],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 1,
-  },
-  {
-    title: 'Blindspot',
-    description: "Paper Crane is an AR game with facial detection feature which is aiming to letting our players feel freedom as well as enjoy the gameplay experience we designed for them.",
-    image: '/images/BlindSpot.png',
-    tags: ['Unity3D', 'WebGl',],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 2,
-  },
-  {
-    title: 'Shopi-fight',
-    description: "Paper Crane is an AR game with facial detection feature which is aiming to letting our players feel freedom as well as enjoy the gameplay experience we designed for them.",
-    image: '/images/Shopifight.png',
-    tags: ['Unity3D', 'Photon Engine',],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 3,
-  },
-  {
-    title: 'Hit.n.Run',
-    description: "Paper Crane is an AR game with facial detection feature which is aiming to letting our players feel freedom as well as enjoy the gameplay experience we designed for them.",
-    image: '/images/HitNRun.png',
-    tags: ['Unity3D'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 4,
-  },
-]
+  WanderMath, PaperCrane, Blindspot, Shopifight, HitNRun
+];
 
 export const TimeLineData = [
   { year: 2015, text: 'Studied at UC Irvine as an undergraduate student majored in CS', },

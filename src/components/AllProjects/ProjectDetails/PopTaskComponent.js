@@ -1,10 +1,11 @@
 import React from 'react'
 import { ProjectDivider, PlayBtn, GifImg, Img, Section, ProjectTitle, ProjectText, ProjectGridContainer, ProjectGridInfo } from './ProjectDetailStyles';
+import { PopTask } from "../../../constants/constants"
 
 export default function PopTaskComponent() {
     return (
         <Section flex>
-            <Img src='/images/PopTask.png' />
+            <Img src='/images/ProjectImage/PopTask.png' />
             <br />
             <ProjectDivider />
             <ProjectTitle>PopTask</ProjectTitle>
@@ -13,7 +14,7 @@ export default function PopTaskComponent() {
                     <ProjectText main >Genre</ProjectText>
                     <ProjectText>Web Application</ProjectText>
                     <ProjectText main >Description</ProjectText>
-                    <ProjectText desc >Pop-task is a work assignment and management resource that improves your efficiency and motivations to work no matter in school, in company or even at home.</ProjectText>
+                    <ProjectText desc >{PopTask.description}</ProjectText>
                 </ProjectGridInfo>
                 <ProjectGridInfo >
                     <ProjectText main >Time</ProjectText>
@@ -25,13 +26,18 @@ export default function PopTaskComponent() {
             </ProjectGridContainer>
             <PlayBtn onClick={() => window.open("https://poptask.fun/", '_blank')}>Try it now!</PlayBtn>
             <br />
-            <ProjectText main >MAIN FEATURE 1</ProjectText>
+            {/* <ProjectText main >MAIN FEATURE 1</ProjectText>
             <Section nopadding row>
-                <GifImg src={'/images/gifExample.gif'} alt="loading..." />
-                <GifImg src={'/images/gifExample.gif'} alt="loading..." />
-            </Section>
-            <ProjectText main >MAIN FEATURE 2</ProjectText>
-            <GifImg big src={'/images/gifExample.gif'} alt="loading..." />
+                <GifImg src={'/images/ProjectDetailMedia/gifExample.gif'} alt="loading..." />
+                <GifImg src={'/images/ProjectDetailMedia/gifExample.gif'} alt="loading..." />
+            </Section> */}
+            <ProjectText main >Group Management (create group / add member)</ProjectText>
+            <GifImg big src={'/images/ProjectDetailMedia/poptaskGif_1.gif'} />
+            <ProjectText main >Task Management (push&edit task / pop task to calendar-view)</ProjectText>
+            <GifImg big src={'/images/ProjectDetailMedia/poptaskGif_2.gif'} />
+            <ProjectText main >Leaderboard (done task and earn score in leaderboard)</ProjectText>
+            <GifImg big src={'/images/ProjectDetailMedia/poptaskGif_3.gif'} />
+            
         </Section>
     )
 }

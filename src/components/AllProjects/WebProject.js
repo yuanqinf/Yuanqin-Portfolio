@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 import { Img, GridContainer, TitleContent, BlogCard, HeaderThree, CardInfo, TagList, Tag, Hr, UtilityList, ExternalLinks } from './AllProjectsStyles.js'
 import { webProjects } from '../../constants/constants';
 
@@ -6,9 +7,9 @@ export default function WebProject() {
     return (
         <React.Fragment>
             <GridContainer>
-                {webProjects.map(({ id, image, title, description, tags, source, visit }) => (
+                {webProjects.map(({ id, image, title, description, tags, visit }) => (
                     <BlogCard key={id}>
-                        <a href={visit}><Img src={image} /></a>
+                        <Link href={visit}><Img src={image} /></Link>
                         <TitleContent>
                             <HeaderThree title> {title} </HeaderThree>
                             <Hr />
@@ -23,8 +24,9 @@ export default function WebProject() {
                             </TagList>
                         </div>
                         <UtilityList>
-                            <ExternalLinks href={visit}> View More </ExternalLinks>
-                            {/* <ExternalLinks href={source}> Source </ExternalLinks> */}
+                            <Link href={visit}>
+                                <ExternalLinks > View More </ExternalLinks>
+                            </Link>                        
                         </UtilityList>
                     </BlogCard>
                 ))}

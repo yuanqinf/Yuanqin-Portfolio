@@ -44,7 +44,7 @@ const Timeline = () => {
   return (
     <Section id="timeline">
       <SectionDivider />
-      <SectionTitle>My Roadmap</SectionTitle>
+      <SectionTitle>My Timeline</SectionTitle>
       <Link href={'/about'}>
         <MoreItem>
           more about me &nbsp;
