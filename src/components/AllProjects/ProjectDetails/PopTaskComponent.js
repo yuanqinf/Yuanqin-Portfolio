@@ -21,7 +21,7 @@ export default function PopTaskComponent() {
                     <ProjectText>2022 Spring(1 month)</ProjectText>
                     <ProjectText main >Technologies Used</ProjectText>
                     <ProjectText>React.js &nbsp; Django &nbsp; AllAuth &nbsp; AWS &nbsp; TailwindCSS</ProjectText>
-                    <ProjectText partner>collaborated with Paul, Chia-Ying </ProjectText>
+                    <ProjectText partner>collaborated with Paul and Chia-Ying </ProjectText>
                 </ProjectGridInfo>
             </ProjectGridContainer>
             <PlayBtn onClick={() => window.open("https://poptask.fun/", '_blank')}>Try it now!</PlayBtn>
@@ -32,11 +32,11 @@ export default function PopTaskComponent() {
                 <GifImg src={'/images/ProjectDetailMedia/gifExample.gif'} alt="loading..." />
             </Section> */}
             <ProjectText main >Group Management (create group / add member)</ProjectText>
-            <GifImg big src={'/images/ProjectDetailMedia/poptaskGif_1.gif'} />
+            <GifImg big src={'/images/ProjectDetailMedia/Poptask/poptaskGif_1.gif'} />
             <ProjectText main >Task Management (push&edit task / pop task to calendar-view)</ProjectText>
-            <GifImg big src={'/images/ProjectDetailMedia/poptaskGif_2.gif'} />
+            <GifImg big src={'/images/ProjectDetailMedia/Poptask/poptaskGif_2.gif'} />
             <ProjectText main >Leaderboard (done task and earn score in leaderboard)</ProjectText>
-            <GifImg big src={'/images/ProjectDetailMedia/poptaskGif_3.gif'} />
+            <GifImg big src={'/images/ProjectDetailMedia/Poptask/poptaskGif_3.gif'} />
             
         </Section>
     )

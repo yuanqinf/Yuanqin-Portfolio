@@ -64,7 +64,6 @@ export const ProjectText = styled.p`
   font-style: ${(props) => props.partner ? 'italic' : ''};
   line-height: 30px;
   text-align: ${(props) => props.desc ? 'left' : 'center'};
-  padding-top: 2rem;
   padding-bottom: 2rem;
   color: ${(props) => props.partner ? 'rgba(238, 238, 238, 0.7)' : 'rgba(255, 255, 255, 1)'};
 

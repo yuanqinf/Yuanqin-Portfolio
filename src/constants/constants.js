@@ -12,17 +12,18 @@ export const PopTask =
 export const Todoist =
 {
   title: 'Todoist',
-  description: "Todo-ist is a cloned project which implemented the main feature and UI of the real ‘Todoist’  by using ReactJS and FireBase.  ",
+  description: "Todo-ist is a cloned app which has the main features(such as dashboard and sidebar) and UI of the real ‘Todoist’ by using ReactJS and FireBase.",
   image: '/images/ProjectImage/Todoist.png',
   tags: ['React.js', 'SCSS', 'Firebase'],
   visit: '/work/Todoist',
   id: 1,
 };
 
+
 export const Tetris = 
 {
   title: 'Tetris',
-  description: "Pop-task is a work assignment and management resource that improves your efficiency and motivations to work no matter in school, in company or even at home.",
+  description: "Tetris is one of my favorite game, so I decided to rebuild the main game logic of it by using the hooks of react such as “useState” “useEffect” “useCallback” and custom hooks.",
   image: '/images/ProjectImage/Tetris.png',
   tags: ['React.js', 'CSS'],
   visit: '/work/Tetris',
@@ -32,7 +33,7 @@ export const Tetris =
 export const WanderMath =
 {
   title: 'WanderMath',
-  description: "WanderMath is an Augmented Reality (AR) experience to help 4th and 5th graders engage in open-ended math adventures.",
+  description: "WanderMath is an Augmented Reality (AR) game project to help 4th and 5th grader students engage in open-ended math game adventures.",
   image: '/images/ProjectImage/WanderMath.png',
   tags: ['Unity3D', 'ARCore', 'IOS'],
   visit: '/work/WanderMath',
@@ -72,7 +73,7 @@ export const Shopifight =
 export const HitNRun =
 {
   title: 'Hit.n.Run',
-  description: "Paper Crane is an AR game with facial detection feature which is aiming to letting our players feel freedom as well as enjoy the gameplay experience we designed for them.",
+  description: "Hit.n.Run is created during the Ludum Dare 42 game jam. This is a cartoon-style 2D Platform game. All the platform will be destroy after a few seconds one by one.",
   image: '/images/ProjectImage/HitNRun.png',
   tags: ['Unity3D'],
   visit: '/work/HitNRun',
