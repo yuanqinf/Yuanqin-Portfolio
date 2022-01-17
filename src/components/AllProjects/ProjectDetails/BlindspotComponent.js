@@ -22,7 +22,7 @@ const optsSmall = {
 };
 
 
-export default function BlindSpotComponent() {
+export default function BlindspotComponent() {
     const [width, setWidth] = useState(0);
     const isMobile = (width <= 768);
     function handleWindowSizeChange() {
