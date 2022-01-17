@@ -37,7 +37,7 @@ const Footer = () => {
       <SocialIconsContainer>
         <CompanyContainer>
           <Slogan>
-            © 2022 By Yuanqin Fan
+            © 2022 | Designed and Created By Yuanqin Fan
           </Slogan>
         </CompanyContainer>
         <SocialContainer>

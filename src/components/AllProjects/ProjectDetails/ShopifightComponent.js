@@ -1,7 +1,41 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { ProjectDivider, PlayBtn, GifImg, Img, Section, ProjectTitle, ProjectText, ProjectGridContainer, ProjectGridInfo } from './ProjectDetailStyles';
+import { Shopifight } from "../../../constants/constants"
+import YouTube from 'react-youtube';
+
+const optsBig = {
+    height: '390',
+    width: '640',
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 0,
+    },
+};
+
+const optsSmall = {
+    height: '144',
+    width: '256',
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 0,
+    },
+};
 
 export default function ShopifightComponent() {
+    const [width, setWidth] = useState(0);
+    const isMobile = (width <= 768);
+    function handleWindowSizeChange() {
+        setWidth(window.innerWidth);
+    }
+
+    useEffect(() => {
+        handleWindowSizeChange();
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    }, [])
+
     return (
         <Section flex>
             <Img src='/images/ProjectImage/Shopifight.jpg' />
@@ -11,27 +45,22 @@ export default function ShopifightComponent() {
             <ProjectGridContainer>
                 <ProjectGridInfo >
                     <ProjectText main >Genre</ProjectText>
-                    <ProjectText>Web Application</ProjectText>
+                    <ProjectText>3D Battle Royale Style Game</ProjectText>
                     <ProjectText main >Description</ProjectText>
-                    <ProjectText desc >Pop-task is a work assignment and management resource that improves your efficiency and motivations to work no matter in school, in company or even at home.</ProjectText>
+                    <ProjectText desc >{Shopifight.description}</ProjectText>
                 </ProjectGridInfo>
                 <ProjectGridInfo >
                     <ProjectText main >Time</ProjectText>
-                    <ProjectText>2022 Spring(1 month)</ProjectText>
+                    <ProjectText>2021 Fall(3 weeks)</ProjectText>
                     <ProjectText main >Technologies Used</ProjectText>
-                    <ProjectText>React.js &nbsp; Django &nbsp; AllAuth &nbsp; AWS &nbsp; TailwindCSS</ProjectText>
-                    <ProjectText partner>collaborated with Paul, Chia-Ying </ProjectText>
+                    <ProjectText>Unity3D &nbsp; Photon Engine</ProjectText>
+                    <ProjectText partner>collaborated with Peter, Sophia, Shanshan and Leo </ProjectText>
                 </ProjectGridInfo>
             </ProjectGridContainer>
-            <PlayBtn onClick={() => window.open("https://poptask.fun/", '_blank')}>Try it now!</PlayBtn>
+            <PlayBtn onClick={() => window.open("https://aaronfan.itch.io/shopi-fight", '_blank')}>Try it now!</PlayBtn>
             <br />
-            <ProjectText main >MAIN FEATURE 1</ProjectText>
-            <Section nopadding row>
-                <GifImg src={'/images/ProjectDetailMedia/gifExample.gif'} alt="loading..." />
-                <GifImg src={'/images/ProjectDetailMedia/gifExample.gif'} alt="loading..." />
-            </Section>
-            <ProjectText main >MAIN FEATURE 2</ProjectText>
-            <GifImg big src={'/images/ProjectDetailMedia/gifExample.gif'} alt="loading..." />
+            <ProjectText main >Demo Video</ProjectText>
+            <YouTube videoId="GhC0Y0gJoqA" opts={!isMobile ? optsBig : optsSmall}/>
         </Section>
     )
 }

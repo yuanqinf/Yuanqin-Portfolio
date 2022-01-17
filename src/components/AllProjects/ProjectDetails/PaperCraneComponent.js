@@ -45,7 +45,7 @@ export default function PaperCraneComponent() {
             <ProjectGridContainer>
                 <ProjectGridInfo >
                     <ProjectText main >Genre</ProjectText>
-                    <ProjectText>Web Application</ProjectText>
+                    <ProjectText>AR Game</ProjectText>
                     <ProjectText main >Description</ProjectText>
                     <ProjectText desc >{PaperCrane.description}</ProjectText>
                 </ProjectGridInfo>
@@ -60,9 +60,9 @@ export default function PaperCraneComponent() {
             <PlayBtn onClick={() => window.open("https://aaronfan.itch.io/papercrane", '_blank')}>Try it now!</PlayBtn>
             <br />
             <ProjectText main >Gameplay Video</ProjectText>
-            <YouTube videoId="LiJcNJeZ7VM" opts={!isMobile ? optsBig : optsSmall}/>
+            <YouTube videoId="c1KDd-fmO74" opts={!isMobile ? optsBig : optsSmall}/>
 
-            <ProjectText main >Voice Detection</ProjectText>
+            <ProjectText main >Voice Detection Demo</ProjectText>
             <GifImg big src={'/images/ProjectDetailMedia/PaperCrane/PaperCrane_Gif_1.gif'} alt="loading..." />
         </Section>
     )

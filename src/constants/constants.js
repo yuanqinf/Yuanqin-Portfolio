@@ -53,7 +53,7 @@ export const PaperCrane =
 export const Blindspot =
 {
   title: 'Blindspot',
-  description: "Paper Crane is an AR game with facial detection feature which is aiming to letting our players feel freedom as well as enjoy the gameplay experience we designed for them.",
+  description: "Blindspot is a 2D web-based game that tells a story of a Chinese girl who is fresh off the boat and experiences microaggressions in her college life.",
   image: '/images/ProjectImage/BlindSpot.png',
   tags: ['Unity3D', 'WebGl',],
   visit: '/work/Blindspot',
@@ -63,7 +63,7 @@ export const Blindspot =
 export const Shopifight =
 {
   title: 'Shopi-fight',
-  description: "Paper Crane is an AR game with facial detection feature which is aiming to letting our players feel freedom as well as enjoy the gameplay experience we designed for them.",
+  description: "Shopi-fight is an online multiplayer game with the background of black Friday eve. In this game, players will become consumers who want to grab as many goods as possible for discounted items.",
   image: '/images/ProjectImage/Shopifight.jpg',
   tags: ['Unity3D', 'Photon Engine',],
   visit: '/work/Shopifight',
