@@ -41,13 +41,13 @@ const Footer = () => {
           </Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href='https://github.com'>
+          <SocialIcons href='https://github.com/yuanqinf' target="_blank">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href='https://linkedin.com'>
+          <SocialIcons href='https://www.linkedin.com/in/yuanqinf/' target="_blank">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href='https://aaronfan.itch.io/'>
+          <SocialIcons href='https://aaronfan.itch.io/' target="_blank">
             <FaItchIo title="itch.io" size="2.6rem" />
           </SocialIcons>
         </SocialContainer>

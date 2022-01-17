@@ -64,13 +64,13 @@ function Header() {
         </li>
       </Div2>
       <Div3>
-        <SocialIcons href='https://github.com'>
+        <SocialIcons href='https://github.com/yuanqinf' target="_blank">
           <AiFillGithub title="Github" size="3rem" />
         </SocialIcons>
-        <SocialIcons href='https://linkedin.com'>
+        <SocialIcons href='https://www.linkedin.com/in/yuanqinf/' target="_blank">
           <AiFillLinkedin title="Linkedin" size="3rem" />
         </SocialIcons>
-        <SocialIcons href='https://aaronfan.itch.io/'>
+        <SocialIcons href='https://aaronfan.itch.io/' target="_blank">
           <FaItchIo title="itch.io" size="2.6rem" />
         </SocialIcons>
       </Div3>
