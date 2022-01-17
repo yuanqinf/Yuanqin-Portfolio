@@ -46,7 +46,7 @@ export default function BlindspotComponent() {
             <ProjectGridContainer>
                 <ProjectGridInfo >
                     <ProjectText main >Genre</ProjectText>
-                    <ProjectText>2D web-based game</ProjectText>
+                    <ProjectText>2D Web-Based Interactive Story</ProjectText>
                     <ProjectText main >Description</ProjectText>
                     <ProjectText desc >{Blindspot.description}</ProjectText>
                 </ProjectGridInfo>

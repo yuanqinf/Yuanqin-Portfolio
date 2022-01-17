@@ -54,7 +54,7 @@ export default function PaperCraneComponent() {
                     <ProjectText>2020 Fall(2 weeks)</ProjectText>
                     <ProjectText main >Technologies Used</ProjectText>
                     <ProjectText>Unity3D &nbsp; OpenCV </ProjectText>
-                    <ProjectText partner>collaborated with shiwen, Mincan, Tianyi and Lauren </ProjectText>
+                    <ProjectText partner>collaborated with Shiwen, Mincan, Tianyi and Lauren </ProjectText>
                 </ProjectGridInfo>
             </ProjectGridContainer>
             <PlayBtn onClick={() => window.open("https://aaronfan.itch.io/papercrane", '_blank')}>Try it now!</PlayBtn>

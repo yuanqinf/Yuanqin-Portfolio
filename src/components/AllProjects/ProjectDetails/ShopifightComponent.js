@@ -45,7 +45,7 @@ export default function ShopifightComponent() {
             <ProjectGridContainer>
                 <ProjectGridInfo >
                     <ProjectText main >Genre</ProjectText>
-                    <ProjectText>3D Battle Royale Style Game</ProjectText>
+                    <ProjectText>3D Battle Royale Style Action Game</ProjectText>
                     <ProjectText main >Description</ProjectText>
                     <ProjectText desc >{Shopifight.description}</ProjectText>
                 </ProjectGridInfo>
