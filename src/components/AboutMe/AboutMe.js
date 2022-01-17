@@ -10,7 +10,7 @@ const AboutMe = () => (
       <br />
     </AboutText>
     <Section nopadding row>
-      <Img src={'/images/Person/Yuanqin_Png.png'} />
+      <Img src={'/images/Person/Yuanqin_JPG.jpg'} />
       <AboutText desc>
         {DetailText1}
         <br /> <br />
