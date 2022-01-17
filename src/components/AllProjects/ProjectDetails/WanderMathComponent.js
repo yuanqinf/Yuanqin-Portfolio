@@ -57,7 +57,8 @@ export default function WanderMathComponent() {
                     <ProjectText partner>collaborated with Sophia, Leslie, Katherine and Jacob </ProjectText>
                 </ProjectGridInfo>
             </ProjectGridContainer>
-            <PlayBtn onClick={() => window.open("https://apps.apple.com/us/app/wandermath/id1598652813?fbclid=IwAR14lF-xSMtPf90VY6px_xiq-O68pVen7erdlREPM8dhZslg-GXa2ZazfSE", '_blank')}>Try it now!</PlayBtn>
+            <PlayBtn onClick={() => window.open("https://apps.apple.com/us/app/wandermath/id1598652813?fbclid=IwAR14lF-xSMtPf90VY6px_xiq-O68pVen7erdlREPM8dhZslg-GXa2ZazfSE", '_blank')}>Try it now! (App Store)</PlayBtn>
+            <PlayBtn onClick={() => window.open("https://play.google.com/store/apps/details?id=com.DefaultCompany.WanderMath", '_blank')}>Try it now! (Google Play)</PlayBtn>
             <PlayBtn onClick={() => window.open("https://www.cmu.edu/news/stories/archives/2022/january/etc-middle-school-math.html")}>Learn more from CMU News</PlayBtn>
             <br />
             <ProjectText main >Trailer Video</ProjectText>
