@@ -60,7 +60,9 @@ export default function ShopifightComponent() {
             <PlayBtn onClick={() => window.open("https://aaronfan.itch.io/shopi-fight", '_blank')}>Try it now!</PlayBtn>
             <br />
             <ProjectText main >Demo Video</ProjectText>
-            <YouTube videoId="GhC0Y0gJoqA" opts={!isMobile ? optsBig : optsSmall}/>
+            <YouTube videoId="XJa3slhVv0U" opts={!isMobile ? optsBig : optsSmall}/>
         </Section>
     )
 }
+
+// https://youtu.be/XJa3slhVv0U
