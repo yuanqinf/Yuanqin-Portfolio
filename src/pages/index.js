@@ -1,14 +1,8 @@
-import React, { useEffect } from 'react';
-import Homepage from './homepage';
+import React from "react";
+import Homepage from "./homepage";
 
 const Home = () => {
-  useEffect(() => {
-    document.title = "Yuanqin Fan | Developer";
-  }, []);
-
-  return (
-    <Homepage />
-  );
+    return <Homepage />;
 };
 
 export default Home;
