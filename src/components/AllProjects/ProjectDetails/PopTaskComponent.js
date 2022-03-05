@@ -24,7 +24,7 @@ export default function PopTaskComponent() {
                     <ProjectText partner>collaborated with Paul and Chia-Ying </ProjectText>
                 </ProjectGridInfo>
             </ProjectGridContainer>
-            <PlayBtn onClick={() => window.open("https://poptask.fun/", '_blank')}>Try it now!</PlayBtn>
+            <PlayBtn onClick={() => window.open("https://github.com/yuanqinf/Pop_Task-main", '_blank')}>Learn More</PlayBtn>
             <br />
             {/* <ProjectText main >MAIN FEATURE 1</ProjectText>
             <Section nopadding row>
