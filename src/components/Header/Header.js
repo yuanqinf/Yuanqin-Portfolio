@@ -5,7 +5,7 @@ import { FaItchIo } from 'react-icons/fa';
 import { HiOutlineLink } from 'react-icons/hi';
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span, MainIcon, DownloadIcon } from './HeaderStyles';
 
-const resumeLink = "https://drive.google.com/file/d/1TedwotfCDZKd_xtziZjrO206qh2eoi6U/view?usp=sharing"
+const resumeLink = "https://drive.google.com/file/d/1MQ0zpeSzrwWZp56NMoCq3r2ixvl6PsuY/view?usp=sharing"
 
 function Header() {
   const [currentActivatedTab, setCurrentActivatedTab] = useState("");
